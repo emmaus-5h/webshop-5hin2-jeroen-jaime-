@@ -9,7 +9,7 @@ const db = new Database('../db/my.db', { verbose: console.log });
 // server, we use express because that is the most common package
 // for advanced documentation see 
 // see https://expressjs.com 
-const express = require('express')
+const express = require('express')  
 const app = express()
 const port = 8080; // standard port for https
 
@@ -67,7 +67,7 @@ function getCategories(request, response) {
 function getProducts(request, response) {
   console.log('API ontvangt /api/products/', request.query)
   let data = []
-  const sqlOpdracht = db.prepare('SELECT products.id AS id, products.name AS name, products.description AS description, products.code AS code, products.price AS price FROM products ORDER BY id ASC')
+  const sqlOpdracht = db.prepare('SELECT products.id AS id, products.name AS name, products.description AS description, products.code AS code, products.price AS price FROM products ORDER BY name')
   data = sqlOpdracht.all()
   // console.log(JSON.stringify(data, null, 2))
   response.status(200).send(data)
