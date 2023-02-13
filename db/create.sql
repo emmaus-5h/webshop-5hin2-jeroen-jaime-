@@ -30,3 +30,36 @@ insert into products (name, description, code, price) values ('Renault R29 2009'
 insert into products (name, description, code, price) values ('McLaren MP4-10 1995', 'These liveries were seen and used on Mika Hakkinen’s McLaren during the 1995 FIA Formula One World Championship. This Show Car features a chassis from the same year and has been branded to reflect the McLaren race cars. The 1995 season was a good year for McLaren who as a team obtained 30 points throughout the season, leading them to place fourth in the Constructors’ Championship. For Mika himself, it was also a good year, with the Finn finishing in seventh place overall in the Driver Standings. His best finishes of the season were two-second places which he claimed in Italy and Japan, making the MP4-10 a podium-finishing car. Race records: 1st place in Australia, Italy and Europe (63 Team Points): Race records: 1st place in Australia, Italy and Europe (63 Team Points)', ' AUT-MP41095',  120000);
 insert into products (name, description, code, price) values ('Ferrari F399 1999', 'The 99 in the cars name reflects the year it was built, the same criteria used by Ferrari in 1953 and 1955. The 3 refers to the race cars displacement. The F399 was a reliable race car and despite the McLaren MP4-14 being more competitive, the F399 managed to conquer the Constructors’ Championship, a title that Ferrari had not clinched in 16 years, since 1983. The car claimed six victories in the 1999 FIA Formula One World Championship. The team scored an impressive 128 points in the Constructors’ Standings, 44 belonging to Michael Schumacher, 74 to Eddie Irvine and 10 for Mika Salo. This show car perfectly recreates the excellent car from the Ferrari livery details to the materials used. Engine: Ferrari Tip 048 V10 80 – rear longitudinal Power: 790 CV, 16.300 r/min Weight: 600Kg Distribution: DOHC – 4 valves per cylinder Lubrication: Dry-sump Framed: material made from caron fibred with honeycomb composite Brakes: Self-ventilating carbon discs Transmission: Longitudinal Ferrari – 7 gears and reverse', ' AUT-F39999',  130000);
 insert into products (name, description, code, price) values ('Red Bull RB9 2013', 'The RB9 was first shown on the third of februari in 2013. The car was driven by Sebastian Vettel and Mwark Webber. The RB9 got 13 wins, 11 poles and won the championship that year.', ' AUT-RB913',  132000);
+
+create table reviews (id integer primary key autoincrement, 
+  person TEXT,
+  Item TEXT,
+  points numeric (10,2)
+  review TEXT,
+  )
+
+insert into reviews (person, item, points, review) values ('Friso','Ferrari F138 2013', 4.5,'I really like ferrari Leclerc is litteraly the GOAT');
+insert into reviews (person, item, points, review) values ('Lars','Ferrari F138 2013', 2,'It broke in less then 2 weeks really bad quality');
+insert into reviews (person, item, points, review) values ('Lars','Ferrari F138 2013', 4,'Delivery was very fast');
+insert into reviews (person, item, points, review) values ('Litjens','Mclaren MP4-21 2006', 5,'The aerodynamics on the car are really great it can drive on the ceiling');
+insert into reviews (person, item, points, review) values ('Caitlin the sheep','Mclaren MP4-21 2006', 4,'Fast delivery and good customer service');
+insert into reviews (person, item, points, review) values ('Caitlin the sheep','Williams FW14 1992', 5,'Really expensive but a great piece of history');
+insert into reviews (person, item, points, review) values ('Sean','Williams FW14 1992', 1,'Dont know why i bought this piece of shit');
+insert into reviews (person, item, points, review) values ('Skonk','Mclaren MP4-13 1997', 4,'I like Mclaren because Norris is sexy');
+insert into reviews (person, item, points, review) values ('Tate','Mclaren MP4-13 1997', 5,'What color is your Mclaren');
+insert into reviews (person, item, points, review) values ('Kimmi','Alpha Romeo ORLEN C42 2022', 3,'I wish i could drive this car');
+insert into reviews (person, item, points, review) values ('Guanyu','Alpha Romeo ORLEN C42 2022', 5,'Zhou is the best chinese driver');
+insert into reviews (person, item, points, review) values ('Friso','Alpha Romeo ORLEN C42 2022', 1,'Sexy');
+insert into reviews (person, item, points, review) values ('Latifi','Williams FW17 1995', 5,'I really helped Verstappen get the championship');
+insert into reviews (person, item, points, review) values ('Hamilton','Williams FW17 1995', 2,'Latifi is soooo bad');
+insert into reviews (person, item, points, review) values ('Verstappen','Williams FW17 1995', 5,'Williams helped me really good with latifi');
+insert into reviews (person, item, points, review) values ('Horner','Renault R29 2009', 3.5,'It was a really great price');
+insert into reviews (person, item, points, review) values ('Mip','Renault R29 2009', 2.5, 'Helaas niet mijn maat');
+insert into reviews (person, item, points, review) values ('Skonk','Mclaren MP4-10 1995', 4,'Norris really good looking');
+insert into reviews (person, item, points, review) values ('Jimma','Mclaren MP4-10 1995', 5,'Mclaren is just the best team');
+insert into reviews (person, item, points, review) values ('Jimma','Mclaren MP4-10 1995', 4.5,'Not even expensive');
+insert into reviews (person, item, points, review) values ('Lars','Ferrari F399 1999', 3.5,'Came in really quick almost have al ferraris in my collection');
+insert into reviews (person, item, points, review) values ('Litjens','Ferrari F399 1999', 5,'Once something is a passion, the motivation is there -Schumacher');
+insert into reviews (person, item, points, review) values ('Jeloenie','Redbull RB9 2013', 5,'Gekoloniseerd');
+insert into reviews (person, item, points, review) values ('Jeloenie','Redbull RB9 2013', 5,'Max Verstappen is the gratest driver of al time');
+insert into reviews (person, item, points, review) values ('Horner','Redbull RB9 2013', 4,'Multi 21 seb, Multi 21');
