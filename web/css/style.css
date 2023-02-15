@@ -1,7 +1,10 @@
 /* background */
 body {
-  background-color: #d4e3fe
-};
+  background-image: url("achtergrond.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 /* all pages */
 
