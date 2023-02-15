@@ -31,12 +31,13 @@ insert into products (name, description, code, price) values ('McLaren MP4-10 19
 insert into products (name, description, code, price) values ('Ferrari F399 1999', 'The 99 in the cars name reflects the year it was built, the same criteria used by Ferrari in 1953 and 1955. The 3 refers to the race cars displacement. The F399 was a reliable race car and despite the McLaren MP4-14 being more competitive, the F399 managed to conquer the Constructors’ Championship, a title that Ferrari had not clinched in 16 years, since 1983. The car claimed six victories in the 1999 FIA Formula One World Championship. The team scored an impressive 128 points in the Constructors’ Standings, 44 belonging to Michael Schumacher, 74 to Eddie Irvine and 10 for Mika Salo. This show car perfectly recreates the excellent car from the Ferrari livery details to the materials used. Engine: Ferrari Tip 048 V10 80 – rear longitudinal Power: 790 CV, 16.300 r/min Weight: 600Kg Distribution: DOHC – 4 valves per cylinder Lubrication: Dry-sump Framed: material made from caron fibred with honeycomb composite Brakes: Self-ventilating carbon discs Transmission: Longitudinal Ferrari – 7 gears and reverse', ' AUT-F39999',  130000);
 insert into products (name, description, code, price) values ('Red Bull RB9 2013', 'The RB9 was first shown on the third of februari in 2013. The car was driven by Sebastian Vettel and Mwark Webber. The RB9 got 13 wins, 11 poles and won the championship that year.', ' AUT-RB913',  132000);
 
-create table reviews (id integer primary key autoincrement, 
-  person TEXT,
-  Item TEXT,
-  points numeric (10,2)
+CREATE TABLE reviews (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  person VARCHAR(15),
+  item VARCHAR(255),
   review TEXT,
-  )
+  points NUMERIC(10, 2)
+);
 
 insert into reviews (person, item, points, review) values ('Friso','Ferrari F138 2013', 4.5,'I really like ferrari Leclerc is litteraly the GOAT');
 insert into reviews (person, item, points, review) values ('Lars','Ferrari F138 2013', 2,'It broke in less then 2 weeks really bad quality');
